@@ -2,20 +2,22 @@
 In this project, we use MySQL to code to create a system to make a Pizza company run their business effectively.
 
 
-Executive Summary
+# Executive Summary
 
 Perfect Pizza aims to implement an efficient system for managing pizza and Buffalo wing orders. The system's primary objective is to streamline order processing, enhance customer service, and facilitate managerial decision-making through comprehensive data analysis. This system will enable easy retrieval of customer information, computation of final costs, order distribution to cooks, and generation of receipts and promotional offers. Moreover, it will provide management with insights through weekly total reports.
 
-System Initiation
+# System Initiation
 
-Data Flow Diagram (DFD)
+# Data Flow Diagram (DFD)
 
-The Data Flow Diagram illustrates the flow of information within Perfect Pizza's system, outlining processes and activities involved in order processing and management.
+The Data Flow Diagram illustrates the flow of information within Perfect Pizza's system, outlining processes and activities involved in order processing and compani's management.
 
-List of Entities
+# List of Entities
 
-Customer Entity: Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.
-Orders Entity: Records order-specific information such as order ID, customer ID, delivery details, order date, total cost, tax, delivery cost, and assigned driver ID.
+   # 1. Customer Entity:
+   Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.
+  #2. Orders Entity:
+Records order-specific information such as order ID, customer ID, delivery details, order date, total cost, tax, delivery cost, and assigned driver ID.
 Cook Entity: Manages cook-related data including cook ID, order ID, cook name, and specialty.
 Food Entity: Stores food item details like food ID, cook ID, food name, ingredients, and price.
 Delivery Entity: Manages delivery-related information such as driver ID, driver name, delivery date, receipt ID, coupon ID, order ID, food ID, and payment.
