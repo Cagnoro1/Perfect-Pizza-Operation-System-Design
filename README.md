@@ -14,8 +14,8 @@ The Data Flow Diagram illustrates the flow of information within Perfect Pizza's
 
 # List of Entities
      1. Customer Entity:
-   Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.
-        2. Orders Entity:
+   Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.                                                                           
+     2. Orders Entity:
    Records order-specific information such as order ID, customer ID, delivery details, order date, total cost, tax, delivery cost, and assigned driver ID.
     3. Cook Entity: 
    Manages cook-related data including cook ID, order ID, cook name, and specialty.
