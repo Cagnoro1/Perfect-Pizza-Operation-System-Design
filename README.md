@@ -15,17 +15,17 @@ The Data Flow Diagram illustrates the flow of information within Perfect Pizza's
 # List of Entities
      1. Customer Entity:
    Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.                                                                           
-     2. Orders Entity:
+2. Orders Entity:
    Records order-specific information such as order ID, customer ID, delivery details, order date, total cost, tax, delivery cost, and assigned driver ID.
-    3. Cook Entity: 
+3. Cook Entity: 
    Manages cook-related data including cook ID, order ID, cook name, and specialty.
-    4. Food Entity: 
+4. Food Entity: 
    Stores food item details like food ID, cook ID, food name, ingredients, and price.
-    5. Delivery Entity: 
+5. Delivery Entity: 
     Manages delivery-related information such as driver ID, driver name, delivery date, receipt ID, coupon ID, order ID, food ID, and payment.
-    6. Management Entity: 
+6. Management Entity: 
     Stores managerial data including manager ID, manager name, and weekly total sales, along with driver ID.
-    7.PPS Entity: 
+ 7.PPS Entity: 
     Acts as an intermediary table linking various entities through primary and foreign keys.
 List of Primary and Foreign Keys
 
