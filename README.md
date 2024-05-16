@@ -13,10 +13,8 @@ Perfect Pizza aims to implement an efficient system for managing pizza and Buffa
 The Data Flow Diagram illustrates the flow of information within Perfect Pizza's system, outlining processes and activities involved in order processing and compani's management.
 
 # List of Entities
-
      1. Customer Entity:
    Stores customer details including ID, name, phone number, address, last order date, and preferred pizza.
-    1. Customer Entity:
     2. Orders Entity:
    Records order-specific information such as order ID, customer ID, delivery details, order date, total cost, tax, delivery cost, and assigned driver ID.
     3. Cook Entity: 
