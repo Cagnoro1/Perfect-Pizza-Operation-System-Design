@@ -1,0 +1,85 @@
+SQL tables 
+Database SQL Tables
+
+CREATE TABLE Customer (
+  cus_ID INT AUTO_INCREMENT NOT NULL,
+  cus_name VARCHAR(50) NOT NULL,
+  cus_phone_N VARCHAR(20) NOT NULL,
+  cus_address VARCHAR(50) NOT NULL,
+  cus_Pizza_name VARCHAR(50) NOT NULL,
+  cus_lastOrder_date DATE NOT NULL,
+  PRIMARY KEY (cus_ID)
+);
+
+CREATE TABLE Orders (
+  order_ID INT NOT NULL,
+  cus_ID INT NOT NULL,
+  order_address VARCHAR(50) NOT NULL,
+  order_phone_N VARCHAR(20) NOT NULL,
+  order_Date DATE NOT NULL,
+  Total DECIMAL(15, 2) NOT NULL,
+  Tax DECIMAL(10, 2) NOT NULL,
+  delivery_Cost DECIMAL(20, 2) NOT NULL,
+  driver_ID INT NOT NULL,
+  PRIMARY KEY (order_ID),
+  FOREIGN KEY (cus_ID) REFERENCES Customer(cus_ID)
+  );
+  
+  CREATE TABLE Cook (
+  cook_ID INT NOT NULL,
+  order_ID INT NOT NULL,
+  cook_name VARCHAR(50) NOT NULL,
+  cook_specialty VARCHAR(50) NOT NULL,
+  PRIMARY KEY (cook_ID),
+  FOREIGN KEY (order_ID) REFERENCES Orders(order_ID)
+);
+
+CREATE TABLE Food (
+food_ID INT NOT NULL,
+cook_ID INT NOT NULL,
+food_name VARCHAR (50) NOT NULL,
+food_ingr VARCHAR (100) NOT NULL,
+food_price DECIMAL(15,2) NOT NULL,
+PRIMARY KEY (food_ID),
+FOREIGN KEY (cook_ID) REFERENCES Cook(cook_ID)
+);
+
+CREATE TABLE Delivery (
+  driver_ID INT NOT NULL,
+  driver_name VARCHAR(50) NOT NULL,
+  delivery_date DATE NOT NULL,
+  receipt_ID INT NOT NULL,
+  coupon_ID INT,
+  order_id INT NOT NULL,
+  food_ID INT NOT NULL,
+  payment DECIMAL(10, 2) NOT NULL,
+  PRIMARY KEY (driver_ID),
+  FOREIGN KEY (order_ID) REFERENCES orders (order_ID),
+  FOREIGN KEY (food_ID) REFERENCES Food(food_ID)
+);
+
+CREATE TABLE Management (
+  manager_ID INT,
+  manager_name VARCHAR(50),
+  weekly_total DECIMAL(10,2),
+  driver_ID INT NOT NULL,
+  PRIMARY KEY  (manager_ID),
+  FOREIGN KEY (driver_ID) REFERENCES Delivery(driver_ID)
+);
+
+CREATE TABLE PPS( 
+PPS_ID INT NOT NULL,
+cus_ID INT  NOT NULL,
+order_ID INT NOT NULL,
+cook_ID INT NOT NULL,
+food_ID INT NOT NULL,
+driver_ID INT NOT NULL,
+manager_ID INT NOT NULL,
+PRIMARY KEY (PPS_ID),
+FOREIGN KEY (cus_ID) REFERENCES Customer(cus_ID),
+FOREIGN KEY (order_ID) REFERENCES Orders(order_ID),
+FOREIGN KEY (cook_ID) REFERENCES Cook(cook_ID),
+FOREIGN KEY (food_ID) REFERENCES Food(food_ID),
+FOREIGN KEY (driver_ID) REFERENCES Delivery (driver_ID),
+FOREIGN KEY (manager_ID) REFERENCES Management (manager_ID)
+);
