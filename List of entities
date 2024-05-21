@@ -1,0 +1,68 @@
+List of entities 
+
+The entities and their respective attributes that make up the data structures in the design are:
+
+1.	Customer entity:
+
+•	cus_ID (primary key)
+•	cus_name
+•	cus_phone_N
+•	cus_address
+•	cus_Pizza_name
+•	cus_lastOrder_date
+
+2.	Orders entity:
+
+•	order_ID (primary key)
+•	cus_ID (foreign key referencing Customer entity)
+•	order_address
+•	order_phone_N
+•	order_Date
+•	Total
+•	Tax
+•	delivery_Cost
+•	driver_ID (foreign key referencing Delivery entity)
+
+3.	Cook entity:
+
+•	cook_ID (primary key)
+•	order_ID (foreign key referencing Orders entity)
+•	cook_name
+•	cook_specialty
+
+4.	Food entity:
+
+•	food_ID (primary key)
+•	cook_ID (foreign key referencing Cook entity)
+•	food_name
+•	food_ingr
+•	food_price
+
+5.	Delivery entity:
+
+•	driver_ID (primary key)
+•	driver_name
+•	delivery_date
+•	receipt_ID
+•	coupon_ID
+•	order_id (foreign key referencing Orders entity)
+•	food_ID (foreign key referencing Food entity)
+•	payment
+
+6.	Management entity:
+
+•	manager_ID (primary key)
+•	manager_name
+•	weekly_total
+•	driver_ID (foreign key referencing Delivery entity)
+
+7.	PPS entity:
+
+•	PPS_ID (primary key)
+•	cus_ID (foreign key referencing Customer entity)
+•	order_ID (foreign key referencing Orders entity)
+•	cook_ID (foreign key referencing Cook entity)
+•	food_ID (foreign key referencing Food entity)
+•	driver_ID (foreign key referencing Delivery entity)
+•	manager_ID (foreign key referencing Management entity)
+
