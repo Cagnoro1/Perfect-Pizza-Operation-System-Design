@@ -101,7 +101,7 @@ The entities and their respective attributes that make up the data structures in
 •	weekly_total
 •	driver_ID (foreign key referencing Delivery entity)
 
-8.	PPS entity:
+7.	PPS entity:
 •	PPS_ID (primary key)
 •	cus_ID (foreign key referencing Customer entity)
 •	order_ID (foreign key referencing Orders entity)
@@ -109,6 +109,9 @@ The entities and their respective attributes that make up the data structures in
 •	food_ID (foreign key referencing Food entity)
 •	driver_ID (foreign key referencing Delivery entity)
 •	manager_ID (foreign key referencing Management entity)
+
+![image](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/b3ea496d-e3e8-4c66-b178-08de162e6fd9)
+
 
 ![image](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/bc08b575-fb10-4320-bd24-6758eaf78ef6)
 
