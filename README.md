@@ -52,7 +52,6 @@ List of Primary and Foreign Keys
 SQL tables are designed and created to efficiently store and manage data related to customers, orders, cooks, food items, deliveries, and managerial activities. Each table is structured with appropriate attributes and relationships, ensuring data integrity and ease of retrieval.
 The entities and their respective attributes that make up the data structures in the design are:
 
-
 1.	Customer entity:
 •	cus_ID (primary key)
 •	cus_name
@@ -110,22 +109,15 @@ The entities and their respective attributes that make up the data structures in
 •	driver_ID (foreign key referencing Delivery entity)
 •	manager_ID (foreign key referencing Management entity)
 
-![image](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/b3ea496d-e3e8-4c66-b178-08de162e6fd9)
-
-
-![image](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/bc08b575-fb10-4320-bd24-6758eaf78ef6)
-
-
-![image](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/9c31026c-b2e6-4d24-876f-76e7954dcec9)
 
 ## Exploratory Data Analysis
-a) Can we generate a each customer's profile?
+a) Can we generate each customer's profile?
 
-b) Show the cutomer's orders, the total, tax, delivery_cost  and the driver ID
+b) Show the customer's orders, the total, tax, delivery_cost,  and the driver ID
 
-c) Wich driver made deliveries this week?
+c) Which driver made deliveries this week?
 
-d) Show management profile and their weekly sales revenue.
+d) Show management profiles and their weekly sales revenue.
 
 e) Generate a relational Analysis:
 
