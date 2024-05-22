@@ -7,8 +7,6 @@
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Limitation](#limitation)
-- [References](#references)
 
 ## Project Overview 
 
@@ -19,12 +17,12 @@ The data was created using MySQL.  It was designed to fit the operation system r
 
 ## Tools 
 - MySQL (SQL) - Data generation and Data Analysis 
-- Microsoft Excel - Data cleaning, Data formating 
+- Microsoft Excel - Data cleaning, Data formatting 
 
 ## Data Cleaning and Preparation
 ### Data Flow Diagram (DFD)
 
-The Data Flow Diagram illustrates the flow of information within Perfect Pizza's system, outlining processes and activities involved in order processing and compani's management.
+The Data Flow Diagram illustrates the flow of information within Perfect Pizza's system, outlining processes and activities involved in order processing and company's management.
 
 ![DFD ](https://github.com/Cagnoro1/Perfect-Pizza-Operation-System-Design/assets/135088212/0e74f36c-a2db-4cee-ba57-cfbc6f70c14d)
 
